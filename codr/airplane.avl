@@ -1,0 +1,48 @@
+#green team preliminary sizing
+0.0
+1 0 0
+3.5 0.5 7 #preliminary numbers
+0.1 0 0
+0.02 #idk copying example
+
+SURFACE
+Main Wing
+12 1 
+	COMPONENT
+	1
+	YDUPLICATE
+	SCALE
+	1 1 1
+	TRANSLATE
+	0 0 0
+	ANGLE
+	0
+	SECTION
+	-0.25 3.5 0 0.5 0
+		NACA
+		0015
+
+	SECTION
+		AIRFOIL
+		CLAF
+		CDCL
+	
+	SECTION
+		AFILE
+		CONTROL
+		CONTROL
+
+BODY
+	YDUPLICATE
+	SCALE
+	TRANSLATE
+	BFILE
+
+SURFACE
+	YDUPLICATE
+
+	SECTION
+
+	SECTION
+
+
