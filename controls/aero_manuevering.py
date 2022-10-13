@@ -6,9 +6,10 @@ n_timesteps = 100
 I_plane = 312
 rho = 1.245
 CDA= 100
-plane_mass =400 #kg
+plane_mass = 220 #kg
 S_ref = 3.5 #m^2
 L = 0.5*rho*S_ref*v**2
+Cl_max = 1.5
 
 ### Loop Radius Minimization ###
 opti = asb.Opti()
@@ -20,5 +21,5 @@ R_min = 2*wing_loading/Cl_max #want to minimize this
 # roll rate equation: p_dot = L_p*p + L_sigmaa*sigmaa
 # Lets set as requirement the roll rate of the Zivka Edge 540: 7.33 rad/sec
 dyn = asb.DynamicsRigidBody3DBodyEuler(
-    #mass_props=
+    mass_props=asb.MassProperties(mass=plane_mass)
 )
