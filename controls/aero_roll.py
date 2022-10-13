@@ -4,25 +4,25 @@ import matplotlib.pyplot as plt
 
 # Define Useful Constants
 rho = 1.245
-S_ref = 3.5 #m^2
-b = 4.6 #m
+S_ref = 2.925 #m^2
+b = 4.19 #m
 Cl_max = 1.3 #stall occurs at about 20 deg AoA, at which point our airfoil produces this Cl
 fuse_radius = 0.3 #m
 av_quarter_chord = b/4 #half of half the span
 g = 9.8 #m/s
-maneuver_speed = 20 #m/s
+maneuver_speed = 25 #m/s
 plane_mass = 233 #kg
 wing_mass = 10.5 #kg
 fuse_mass = plane_mass - wing_mass
 I_fuse = 0.5*fuse_mass*fuse_radius**2
 I_wing = (1/12)*(wing_mass/2)*(b/4)**2 + (wing_mass/2)*((b/4)+fuse_radius)**2
 I_plane = I_fuse + 2*I_wing
-
+Cd = 1.28
 ### Snap Roll Time Minimization ###
 n_timesteps = 100
 
 opti = asb.Opti()
-time_final = opti.variable(init_guess=5, lower_bound=1)
+time_final = opti.variable(init_guess=5, lower_bound=0.5)
 time = np.linspace(0, time_final, n_timesteps)
 
 angle = opti.variable(
@@ -45,7 +45,7 @@ moment = opti.variable(init_guess=np.linspace(moment_max, -moment_max, n_timeste
 opti.constrain_derivative(
     variable=angular_velocity,
     with_respect_to=time,
-    derivative=moment/I_plane # TODO - is this angular acceleration?
+    derivative=(moment-(2*((1/8)*rho*Cd*angular_velocity**2*(b/2)**4)))/I_plane
 )
 
 opti.subject_to([
@@ -60,16 +60,17 @@ sol = opti.solve()
 
 fig, ax = plt.subplots(3,1)
 ax[0].plot(sol.value(time), sol.value(angle))
-ax[0].set_xlabel(r"Time")
-ax[0].set_ylabel(r"Angle")
+ax[0].set_xlabel(r"Time (sec)")
+ax[0].set_ylabel(r"Angle (rad)")
 
 ax[1].plot(sol.value(time), sol.value(angular_velocity))
-ax[1].set_xlabel(r"Time")
-ax[1].set_ylabel(r"Anglular velocity")
+ax[1].set_xlabel(r"Time (sec)")
+ax[1].set_ylabel(r"Angular velocity (rad/sec)")
 
-ax[2].plot(sol.value(time), sol.value(moment)/half_span_location)
-ax[2].set_xlabel(r"Time")
-ax[2].set_ylabel(r"Aerodynamic Force")
+ax[2].plot(sol.value(time), sol.value(moment))
+ax[2].set_xlabel(r"Time (sec)")
+ax[2].set_ylabel(r"Moment (Nm)")
 
 plt.show()
-
+print("final optimization time:", sol.value(time_final))
+print("Max angular rate:", max(sol.value(angular_velocity)))
