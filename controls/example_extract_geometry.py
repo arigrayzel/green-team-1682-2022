@@ -16,4 +16,7 @@ design_element_values = {
     'Cd_tail_roll': None
 }
 data = extract_geometry.get_values(design_element_values)
+b = design_element_values['b']
+rho = design_element_values['rho']
 print(data)
+print('b is', b, 'rho is', rho)
