@@ -4,4 +4,4 @@ rho = 1.245  # air density
 Cl_max = 1.3  # Maximum lift coefficient
 
 R_min = (2*m/S) / (rho*Cl_max)  # minimum loop radius (m)
-print(R_min, 'meters')
+print(R_min, 'm') 
