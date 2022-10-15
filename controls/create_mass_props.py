@@ -3,8 +3,21 @@ import aerosandbox as asb
 import aerosandbox.numpy as np
 from aerosandbox.tools import units as u
 
+design_elements = {
+    'b': None,
+    'plane_mass': None,
+    'wing_mass': None,
+    'fuse_mass': None,
+    'fuse_radius': None,
+    'x_cg':None,
+    'y_cg': None,
+    'z_cg': None,
+    'c_t': None,
+    'c_r': None,
+    'fuse_length': None
+}
 
-def get_inertia_moments(design_elts):
+def get_inertia_moments(design_elts=design_elements):
     '''
     :param design_elts: dictionary of items we want to query from master value sheet
     :return: Principal-axis moments of inertia
@@ -29,7 +42,7 @@ def get_inertia_moments(design_elts):
     return I_xx, I_yy, I_zz
 
 
-def create_mass_props(design_elts):
+def create_mass_props(design_elts=design_elements):
     '''
     :param design_elts: dictionary of items we want to query from master value sheet
     :return: AeroSandbox MassProperties object
@@ -56,18 +69,6 @@ def create_mass_props(design_elts):
 
     return mass_props
 
-design_elements = {
-    'b': None,
-    'plane_mass': None,
-    'wing_mass': None,
-    'fuse_mass': None,
-    'fuse_radius': None,
-    'x_cg':None,
-    'y_cg': None,
-    'z_cg': None,
-    'c_t': None,
-    'c_r': None,
-    'fuse_length': None
-}
 
-print(create_mass_props(design_elements))
+if __name__=="__main__":
+    print(create_mass_props(design_elements))
