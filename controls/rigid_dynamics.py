@@ -86,13 +86,13 @@ dyn.add_force(
 #roll moment
 roll = opti.variable(init_guess=np.concatenate((10000*np.ones(N//2), -10000*np.ones(N//2))), n_vars=N, lower_bound=-10000, upper_bound=10000)
 #pitch moment
-pitch = opti.variable(init_guess=np.zeros(N), n_vars=N)
+#pitch = opti.variable(init_guess=np.zeros(N), n_vars=N, lower_bound=-1000, upper_bound=1000)
 #yaw moment
-yaw = opti.variable(init_guess=np.zeros(N), n_vars=N)
+#yaw = opti.variable(init_guess=np.zeros(N), n_vars=N, lower_bound=-1000, upper_bound=1000)
 dyn.add_moment(
     Mx=roll,
-    My=pitch,
-    Mz=yaw,
+    #My=pitch,
+    #Mz=yaw,
     axes="body"
 )
 
