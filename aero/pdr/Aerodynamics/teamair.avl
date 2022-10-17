@@ -22,10 +22,11 @@ ANGLE
 0.0
 #-------------------------------------------------------------
 SECTION
-NACA
-0015
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 0.      0.     0.      2.36     0.0   0          0
+
+NACA
+0015
 
 #Cname   Cgain  Xhinge  HingeVec     SgnDup
 CONTROL
@@ -35,10 +36,11 @@ CONTROL
 aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
 #-------------------------------------------------------------
 SECTION
-NACA
-0015
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 0.0     5.32    0.0    1.18     0.0   0          0
+
+NACA
+0015
 
 #Cname   Cgain  Xhinge  HingeVec     SgnDup
 CONTROL
