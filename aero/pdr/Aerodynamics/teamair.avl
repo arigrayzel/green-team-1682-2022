@@ -25,6 +25,9 @@ SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 0.      0.     0.      2.36     0.0   0          0
 
+NACA
+0015
+
 #Cname   Cgain  Xhinge  HingeVec     SgnDup
 CONTROL
 flap     1.0   0.75    0.0 0.0 0.0   1.0
@@ -35,6 +38,9 @@ aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
 SECTION
 #Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 0.0     5.32    0.0    1.18     0.0   0          0
+
+NACA
+0015
 
 #Cname   Cgain  Xhinge  HingeVec     SgnDup
 CONTROL
@@ -75,10 +81,10 @@ SECTION
 !Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 -0.1    0.     0.0     0.95     0.    7          -1.25
 CONTROL
-rudder  1.0  0.0  0. 0. 0.  1
+rudder  1.0  0.80  0. 0. 0.  1
 
 SECTION
 !Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
 -0.075  0.     1.96     0.62     0.    0          0
 CONTROL
-rudder  1.0  0.0  0. 0. 0.  1
+rudder  1.0  0.80  0. 0. 0.  1
