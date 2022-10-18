@@ -38,6 +38,9 @@ dyn = asb.DynamicsRigidBody3DBodyEuler(
 
 #constrain initial state
 opti.subject_to([
+    dyn.x_e[0] == 0,
+    dyn.y_e[0] == 0,
+    dyn.z_e[0] == 0,
     dyn.u_b[0] == 20,
     dyn.v_b[0] == 0,
     dyn.w_b[0] == 0,
