@@ -36,7 +36,6 @@ def get_values(design_element_values):
     Map variable names to None to start (or a manual value). See example_extract_geometry for an example use case 
     """""
     df = pd.read_excel(SPREADSHEET_FILENAME, sheet_name='Controls Script Values', header=1, usecols=['Variable Name', 'Value', 'Source'])
-    print(df)
     for key in design_element_values.keys():
         if key in df['Variable Name'].values:
             design_element_values[key] = float(df[df['Variable Name'] == key]['Value'])
