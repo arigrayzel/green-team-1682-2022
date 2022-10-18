@@ -38,7 +38,7 @@ def create_plane():
 
 
     naca0015 = asb.Airfoil("naca0015")
-    # naca0015.generate_polars(cache_filename="assets/naca0015.json")
+    naca0015.generate_polars(cache_filename="assets/naca0015.json")
     # naca0015.generate_polars()
 
     airplane = asb.Airplane(
