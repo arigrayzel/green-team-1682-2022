@@ -30,7 +30,6 @@ design_elements = {
     'total_loc': None
 }
 
-
 def get_inertia_moments(design_elts=design_elements):
     '''
     :param design_elts: dictionary of items we want to query from master value sheet
@@ -75,7 +74,7 @@ def get_inertia_moments(design_elts=design_elements):
     I_yy = (1/12)*wing_mass*((c_r+c_t)/2)**2 + wing_mass*(wing_loc-xcg)**2 #main wing
     + (1/12)*horiz_tail_mass*horiz_tail_avchord**2 + horiz_tail_mass*(tail_loc-xcg)**2 #horiz T-tail
     + (1/12)*vert_tail_mass*vert_tail_avchord**2 + vert_tail_mass*(tail_loc-xcg)**2 #vert tail
-    + (1/2)*fuse_mass*fuse_length**2 + fuse_mass(structures_loc-xcg)**2 #fuse
+    + (1/2)*fuse_mass*fuse_length**2 + fuse_mass*(structures_loc-xcg)**2 #fuse
     + pilot_mass*(pilot_loc-xcg)**2 #pilot
     + battery_mass*(battery_loc-xcg)**2 #batteries
     + tail_motor_mass*(tail_motor_loc-xcg)**2 #tail motor
@@ -83,7 +82,7 @@ def get_inertia_moments(design_elts=design_elements):
     I_zz = (1/12)*wing_mass*b**2 #main wing
     + (1/12)*horiz_tail_mass*b_htail**2 #horiz T-tail
     + (1/12)*vert_tail_mass*vert_tail_avchord**2 + vert_tail_mass*(tail_loc-xcg)**2 #vert tail
-    + (1/2) * fuse_mass * fuse_length ** 2 + fuse_mass(structures_loc - xcg) ** 2  # fuse
+    + (1/2) * fuse_mass * fuse_length ** 2 + fuse_mass*(structures_loc - xcg) ** 2  # fuse
     + 2*(motor_mass/2)*(fuse_radius+b/2)**2  # primary motors at wing tips
     + pilot_mass * (pilot_loc - xcg) ** 2  # pilot
     + battery_mass * (battery_loc - xcg) ** 2  # batteries
@@ -121,4 +120,5 @@ def create_mass_props(design_elts=design_elements):
 
 
 if __name__=="__main__":
-    print(create_mass_props(design_elements))
+    # print(create_mass_props(design_elements))
+    print(get_inertia_moments(design_elements))
