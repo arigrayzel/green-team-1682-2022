@@ -1,0 +1,90 @@
+Team Air Plane
+#Mach
+ 0.0    
+#IYsym   IZsym   Zsym
+ 0       0       0.0
+#Sref    Cref    Bref
+18.82    1.77   10.64
+#Xref    Yref    Zref
+0.0     0.0     0.0
+#
+#
+#====================================================================
+SURFACE 
+Wing 
+#Nchordwise  Cspace   Nspanwise   Sspace
+8            1.0       12         1.0
+#
+YDUPLICATE
+0.0
+#
+ANGLE
+0.0
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+0.      0.     0.      2.36     0.0   0          0
+
+NACA
+0015
+
+#Cname   Cgain  Xhinge  HingeVec     SgnDup
+CONTROL
+flap     1.0   0.75    0.0 0.0 0.0   1.0
+
+CONTROL
+aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+0.0     5.32    0.0    1.18     0.0   0          0
+
+NACA
+0015
+
+#Cname   Cgain  Xhinge  HingeVec     SgnDup
+CONTROL
+flap     1.0   0.75    0.0 0.0 0.0   1.0
+
+CONTROL
+aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
+#
+#--------------------------------------------------
+SURFACE
+STAB
+!Nchordwise  Cspace  Nspanwise  Sspace
+1            1.0     7          -2.0
+YDUPLICATE 
+0.0
+TRANSLATE 
+6  0.0  1.36
+SECTION
+!Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+-0.1    0.     0.0     0.95     0.    7          -1.25
+CONTROL
+elevator  1.0  0.0  0. 0. 0.  1
+
+SECTION
+!Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+-0.075  1.79   0.0     0.48     0.    0          0
+CONTROL
+elevator  1.0  0.0  0. 0. 0.  1
+
+#--------------------------------------------------
+SURFACE
+FIN
+!Nchordwise  Cspace   Nspanewise  Sspace
+1            1.0      10          1.0
+TRANSLATE
+6   0.0  0.0
+SECTION
+!Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+-0.1    0.     0.0     0.78     0.    7          -1.25
+CONTROL
+rudder  1.0  0.80  0. 0. 0.  1
+
+SECTION
+!Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
+-0.075  0.     1.36     0.58     0.    0          0
+CONTROL
+rudder  1.0  0.80  0. 0. 0.  1
