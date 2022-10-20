@@ -2,11 +2,41 @@ import aerosandbox as asb
 import aerosandbox.numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import create_mass_props
 
+design_elements = {
+    'b': None,
+    'wing_mass': None,
+    'horiz_tail_mass': None,
+    'b_htail': None,
+    'b_vtail': None,
+    'vert_tail_mass': None,
+    'fuse_mass': None,
+    'fuse_radius': None,
+    'motor_mass': None,
+    'tail_motor_mass': None,
+    'c_r': None,
+    'c_t': None,
+    'wing_loc': None,
+    'horiz_tail_avchord': None,
+    'tail_loc': None,
+    'vert_tail_avchord': None,
+    'fuse_length': None,
+    'structures_loc': None,
+    'pilot_mass': None,
+    'pilot_loc': None,
+    'battery_mass': None,
+    'battery_loc': None,
+    'tail_motor_loc': None,
+    'total_loc': None
+}
+
+I_xx, I_yy, I_zz = create_mass_props.get_inertia_moments(design_elements)
+print(I_xx, I_yy, I_zz)
 n_timesteps = 100
-I_xx = 109
-I_yy = 3194
-I_zz = 3293
+# I_xx = 109
+# I_yy = 3194
+# I_zz = 3293
 
 l_rotor = 7
 t_rotor = 2*250
@@ -27,12 +57,12 @@ angular_velocity = opti.derivative_of(angle, with_respect_to=time, derivative_in
 alpha = opti.derivative_of(angular_velocity, with_respect_to=time, derivative_init_guess=1)
 
 
-moment_guess = 5000
+moment_guess = 4700g
 
 
 moment = opti.variable(init_guess=np.linspace(moment_guess, -moment_guess, n_timesteps),n_vars = n_timesteps, lower_bound=-moment_guess, upper_bound=moment_guess)
 
-opti.constrain_derivative(variable=angular_velocity, with_respect_to=time, derivative=(moment-Cd*A_tail*0.5*rho*(angular_velocity*l_rotor)**2)*extra_drag_coeff/I_yy)
+opti.constrain_derivative(variable=angular_velocity, with_respect_to=time, derivative=(moment-Cd*A_tail*0.5*rho*(angular_velocity*l_rotor)**2)*extra_drag_coeff/I_zz)
 
 opti.subject_to([
     angle[0] == 0,
@@ -46,6 +76,7 @@ sol = opti.solve()
 
 print(f"Max angular acceleration: {max(sol.value(alpha)):.2f}")
 print(f"Max negative angular acceleration: {min(sol.value(alpha)):.2f}")
+print("Final time:", sol.value(time_final))
 
 fig, ax = plt.subplots(3,1)
 ax[0].plot(sol.value(time), sol.value(angle))
