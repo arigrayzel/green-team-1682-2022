@@ -64,30 +64,34 @@ def get_inertia_moments(design_elts=design_elements):
     horiz_tail_height = b_vtail
 
     # pilot and batteries modeled as point masses at cg - no contribution to Ixx
-    I_xx = (1/12)*wing_mass*b**2 #main wing
-    + (1/12)*horiz_tail_mass*b_htail**2+horiz_tail_mass*(horiz_tail_height)**2 #horiz T-tail
-    + (1/12)*vert_tail_mass*b_vtail**2+vert_tail_mass*(b_vtail/2)**2 #vert tail
-    + (1/2)*fuse_mass*fuse_radius**2 #fuse
-    + 2*(motor_mass/2)*(fuse_radius+b/2)**2 #primary motors at wing tips
-    + tail_motor_mass*horiz_tail_height**2 #tail motor
+    I_xx = (\
+        (1/12)*wing_mass*b**2 #main wing
+        + (1/12)*horiz_tail_mass*b_htail**2+horiz_tail_mass*(horiz_tail_height)**2 #horiz T-tail
+        + (1/12)*vert_tail_mass*b_vtail**2+vert_tail_mass*(b_vtail/2)**2 #vert tail
+        + (1/2)*fuse_mass*fuse_radius**2 #fuse
+        + 2*(motor_mass/2)*(fuse_radius+b/2)**2 + tail_motor_mass*horiz_tail_height**2 #tail motor
+    )
 
-    I_yy = (1/12)*wing_mass*((c_r+c_t)/2)**2 + wing_mass*(wing_loc-xcg)**2 #main wing
-    + (1/12)*horiz_tail_mass*horiz_tail_avchord**2 + horiz_tail_mass*(tail_loc-xcg)**2 #horiz T-tail
-    + (1/12)*vert_tail_mass*vert_tail_avchord**2 + vert_tail_mass*(tail_loc-xcg)**2 #vert tail
-    + (1/2)*fuse_mass*fuse_length**2 + fuse_mass*(structures_loc-xcg)**2 #fuse
-    + pilot_mass*(pilot_loc-xcg)**2 #pilot
-    + battery_mass*(battery_loc-xcg)**2 #batteries
-    + tail_motor_mass*(tail_motor_loc-xcg)**2 #tail motor
+    I_yy = (
+        (1/12)*wing_mass*((c_r+c_t)/2)**2 + wing_mass*(wing_loc-xcg)**2 #main wing
+        + (1/12)*horiz_tail_mass*horiz_tail_avchord**2 + horiz_tail_mass*(tail_loc-xcg)**2 #horiz T-tail
+        + (1/12)*vert_tail_mass*vert_tail_avchord**2 + vert_tail_mass*(tail_loc-xcg)**2 #vert tail
+        + (1/2)*fuse_mass*fuse_length**2 + fuse_mass*(structures_loc-xcg)**2 #fuse
+        + pilot_mass*(pilot_loc-xcg)**2 #pilot
+        + battery_mass*(battery_loc-xcg)**2 #batteries
+        + tail_motor_mass*(tail_motor_loc-xcg)**2 #tail motor
+    )
 
-    I_zz = (1/12)*wing_mass*b**2 #main wing
-    + (1/12)*horiz_tail_mass*b_htail**2 #horiz T-tail
-    + (1/12)*vert_tail_mass*vert_tail_avchord**2 + vert_tail_mass*(tail_loc-xcg)**2 #vert tail
-    + (1/2) * fuse_mass * fuse_length ** 2 + fuse_mass*(structures_loc - xcg) ** 2  # fuse
-    + 2*(motor_mass/2)*(fuse_radius+b/2)**2  # primary motors at wing tips
-    + pilot_mass * (pilot_loc - xcg) ** 2  # pilot
-    + battery_mass * (battery_loc - xcg) ** 2  # batteries
-    + tail_motor_mass * (tail_motor_loc - xcg) ** 2  # tail motor
-
+    I_zz = (
+        (1/12)*wing_mass*b**2 #main wing
+        + (1/12)*horiz_tail_mass*b_htail**2 #horiz T-tail
+        + (1/12)*vert_tail_mass*vert_tail_avchord**2 + vert_tail_mass*(tail_loc-xcg)**2 #vert tail
+        + (1/2) * fuse_mass * fuse_length ** 2 + fuse_mass*(structures_loc - xcg) ** 2  # fuse
+        + 2*(motor_mass/2)*(fuse_radius+b/2)**2  # primary motors at wing tips
+        + pilot_mass * (pilot_loc - xcg) ** 2  # pilot
+        + battery_mass * (battery_loc - xcg) ** 2  # batteries
+        + tail_motor_mass * (tail_motor_loc - xcg) ** 2  # tail motor
+    )
     return I_xx, I_yy, I_zz
 
 
