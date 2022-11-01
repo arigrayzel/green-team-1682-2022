@@ -1286,6 +1286,7 @@ h
 <path layer="Controls" stroke="black">
 180.118 705.546 m
 180.014 710.009 l
+</path>
 <path layer="Outer_Mold" stroke="violet" pen="1">
 191.217 660.608 m
 215.217 700.64 l
