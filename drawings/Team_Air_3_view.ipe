@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20221101114348" modified="D:20221101143525"/>
+<info created="D:20221101114348" modified="D:20221101164308"/>
 <bitmap id="1" width="1000" height="150" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="6557" encoding="base64">
 eNrt3c9LW/n3x/H5x4bPQmZRupAupAvpxm7sZr58pG4sFIeCblIoyoASUajW4o9FypT0Y8hA
 MFQaGCqEhIotWEuHWDEISguhgt+jp56+vTeJiSbx3uT5IMwnvdp+9Obm3td957zP+/i48X75
@@ -443,7 +443,7 @@ h
 <layer name="Cockpit"/>
 <layer name="Header_Info"/>
 <layer name="Reference_Images"/>
-<view layers="Outer_Mold Structures Propulsion Controls Dimensions Cockpit Header_Info" active="Outer_Mold"/>
+<view layers="Outer_Mold Structures Propulsion Controls Dimensions Cockpit Header_Info" active="Propulsion"/>
 <text layer="Header_Info" transformations="translations" pos="40 820" stroke="black" type="minipage" width="240" height="12.891" depth="7.92" valign="top">Set Grid size to 10pts\\
 10pts = 1 grid box = 1m</text>
 <path layer="Outer_Mold" matrix="1 0 0 1 -13.1451 0" stroke="black" pen="0.2">
@@ -567,7 +567,7 @@ h
 323.55 718.238 l
 </path>
 <path matrix="1 0 0 1 -40 0" stroke="black" pen="0.2">
-7.50589 -0 0 7.50589 319.994 733.645 e
+7.50589 0 0 7.50589 319.994 733.645 e
 </path>
 <path matrix="1 0 0 1 -33.7121 -0.0003171" stroke="black" pen="0.2">
 13.0014 -0.0003171 0.0003171 13.0014 333.696 720 e
@@ -917,7 +917,7 @@ h
 181.505 720 l
 h
 </path>
-<path stroke="black" pen="0.2">
+<path layer="Propulsion" stroke="black" pen="0.2">
 179.244 720 m
 179.991 718.189
 180.751 720 c
@@ -937,7 +937,7 @@ h
 179.992 721.542 m
 205.994 721.542 l
 </path>
-<path matrix="-1 0 0 1 320.037 0" stroke="black" pen="0.2">
+<path layer="Outer_Mold" matrix="-1 0 0 1 320.037 0" stroke="black" pen="0.2">
 266.836 720 m
 373.153 720 l
 </path>
@@ -946,32 +946,32 @@ h
 181.505 720 l
 h
 </path>
-<path matrix="-1 0 0 1 320.037 0" stroke="black" pen="0.2">
+<path layer="Propulsion" matrix="-1 0 0 1 320.037 0" stroke="black" pen="0.2">
 179.244 720 m
 179.991 718.189
 180.751 720 c
 </path>
-<path matrix="-1 0 0 1 320.037 0" stroke="black" pen="0.2">
-179.244 720 m
-179.236 720.98 l
-180.739 720.997 l
-180.751 720 l
+<path matrix="1 0 0 1 -0.04 0" stroke="black" pen="0.2">
+141.068 720 m
+141.075 720.715 l
+139.115 720.726 l
+139.106 720 l
 </path>
-<path matrix="-1 0 0 1 320.037 0" stroke="black" pen="0.2">
+<path matrix="-1 0 0 1 320.082 -0.247703" stroke="black" pen="0.2">
 179.62 720.984 m
 179.97 722.895 l
 180.377 720.993 l
 </path>
-<path matrix="-1 0 0 1 333.038 0" stroke="black" pen="0.2">
+<path matrix="-1 0 0 1 333.083 -0.247703" stroke="black" pen="0.2">
 179.992 721.542 m
 205.994 721.542 l
 </path>
-<path matrix="1 0 0 1 -20.7497 -62.846" stroke="black" pen="0.2">
+<path layer="Outer_Mold" matrix="1 0 0 1 -20.7497 -62.846" stroke="black" pen="0.2">
 179.998 720 m
 181.505 720 l
 h
 </path>
-<path matrix="1 0 0 1 -19.9958 -62.846" stroke="black" pen="0.2">
+<path layer="Propulsion" matrix="1 0 0 1 -19.9958 -62.846" stroke="black" pen="0.2">
 179.244 720 m
 179.991 718.189
 180.751 720 c
@@ -1021,7 +1021,7 @@ h
 238.509 666.992 m
 238.545 692.994 l
 </path>
-<path matrix="1 0 0 1 62.1863 13.2225" transformations="rigid" stroke="black" pen="0.2">
+<path layer="Propulsion" matrix="1 0 0 1 62.1863 13.2225" transformations="rigid" stroke="black" pen="0.2">
 240.643 679.237 m
 239.088 679.237 l
 239.073 680.74 l
@@ -1036,7 +1036,7 @@ h
 300.713 678.229 m
 300.713 693.215 l
 </path>
-<path stroke="black" pen="0.2">
+<path layer="Outer_Mold" stroke="black" pen="0.2">
 302.829 692.459 m
 304.402 693.246 l
 304.402 693.246 l
