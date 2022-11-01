@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
+
 <info created="D:20221101114348" modified="D:20221101161412"/>
+
 <bitmap id="1" width="1000" height="150" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="6557" encoding="base64">
 eNrt3c9LW/n3x/H5x4bPQmZRupAupAvpxm7sZr58pG4sFIeCblIoyoASUajW4o9FypT0Y8hA
 MFQaGCqEhIotWEuHWDEISguhgt+jp56+vTeJiSbx3uT5IMwnvdp+9Obm3td957zP+/i48X75
@@ -443,7 +445,7 @@ h
 <layer name="Cockpit"/>
 <layer name="Header_Info"/>
 <layer name="Reference_Images"/>
-<view layers="Outer_Mold Structures Propulsion Controls Dimensions Cockpit Header_Info" active="Outer_Mold"/>
+<view layers="Outer_Mold Controls" active="Controls"/>
 <text layer="Header_Info" transformations="translations" pos="40 820" stroke="black" type="minipage" width="240" height="12.891" depth="7.92" valign="top">Set Grid size to 10pts\\
 10pts = 1 grid box = 1m</text>
 <path layer="Outer_Mold" matrix="1 0 0 1 -13.1451 0" stroke="black" pen="0.2">
@@ -1283,6 +1285,9 @@ h
 172.503 714.077 m
 172.527 711.776 l
 </path>
+<path layer="Controls" stroke="black">
+180.118 705.546 m
+180.014 710.009 l
 <path layer="Outer_Mold" stroke="violet" pen="1">
 191.217 660.608 m
 215.217 700.64 l
