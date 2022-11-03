@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20221101114348" modified="D:20221103131549"/>
+<info created="D:20221101114348" modified="D:20221103132509"/>
 <bitmap id="1" width="1000" height="150" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="6557" encoding="base64">
 eNrt3c9LW/n3x/H5x4bPQmZRupAupAvpxm7sZr58pG4sFIeCblIoyoASUajW4o9FypT0Y8hA
 MFQaGCqEhIotWEuHWDEISguhgt+jp56+vTeJiSbx3uT5IMwnvdp+9Obm3td957zP+/i48X75
@@ -1041,7 +1041,7 @@ h
 <use name="mark/cross(sx)" pos="160.019 714.012" size="tiny" stroke="black"/>
 <use name="mark/cross(sx)" pos="245.987 680.008" size="tiny" stroke="black"/>
 <use name="mark/cross(sx)" pos="248.286 680.008" size="tiny" stroke="black"/>
-<path layer="Cockpit" matrix="0.212149 0 0 0.18637 213.774 661.548" stroke="red" pen="0.2">
+<path layer="Cockpit" matrix="0.212149 0 0 0.18637 207.582 661.739" stroke="red" pen="0.2">
 132.756 104.028 m
 131.86 104.572 l
 160.124 99.6425 l
@@ -1126,46 +1126,46 @@ h
 317.426 718.766 m
 322.633 718.771 l
 </path>
-<path matrix="1 0 0 1 -0.00072949 -7.60301" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.0602055 -0.660594" stroke="red" pen="0.2">
 157.198 720 m
 162.845 720 l
 </path>
-<path matrix="1 0 0 1 0.00246993 -1.26955" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.0570061 5.67287" stroke="red" pen="0.2">
 157.198 720 m
 162.845 720 l
 </path>
-<path matrix="1 0 0 1 -0.00353007 -11.2899" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.0630061 -4.3475" stroke="red" pen="0.2">
 157.198 720 m
 162.845 720 l
 </path>
-<path matrix="1 0 0 1 -0.00319942 -6.33346" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.0626755 0.608956" stroke="red" pen="0.2">
 157.198 715.044 m
 157.204 725.064 l
 </path>
-<path matrix="1 0 0 1 -0.00319942 -6.33346" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.0626755 0.608956" stroke="red" pen="0.2">
 162.851 725.064 m
 162.845 715.044 l
 </path>
 <path layer="Outer_Mold" stroke="black" pen="0.2">
-242.309 686.883 m
-233.04 686.178
-225.994 680.551
-234.198 677.419
-246.067 675.862 c
+236.052 687.258 m
+228.081 686.65
+220.275 680.622
+231.871 675.733
+246.029 675.762 c
 </path>
-<path stroke="black" pen="0.1">
+<path matrix="1 0 0 1 -6.276 0.319629" stroke="black" pen="0.1">
 251.681 688.687 m
 269.905 682.294 l
 </path>
-<path stroke="black" pen="0.2">
+<path matrix="1 0 0 1 -6.25638 0.375062" stroke="black" pen="0.2">
 242.309 686.883 m
 247.138 684.074
 250.765 686.715 c
 </path>
-<path stroke="black" pen="0.2">
-242.307 686.987 m
-242.525 690.159 l
-237.398 686.272 l
+<path matrix="1 0 0 1 -0.0129544 0" stroke="black" pen="0.2">
+236.018 687.178 m
+236.281 690.534 l
+231.154 686.647 l
 </path>
 <path stroke="black" pen="0.2">
 279.994 729.103 m
@@ -1183,12 +1183,12 @@ h
 </path>
 <path stroke="black" pen="0.2">
 156.466 720 m
-156.29 727.33
-159.963 732.522
-163.492 727.575
+156.257 730.071
+159.993 740.104
+163.811 730.036
 163.571 720 c
 </path>
-<path stroke="black" pen="0.2">
+<path matrix="1 0 0 1 -6.25638 0.375062" stroke="black" pen="0.2">
 250.765 686.715 m
 251.714 688.555 l
 </path>
@@ -1609,7 +1609,7 @@ h
 280.829 720.076 m
 280.544 722.232 l
 </path>
-<path layer="Propulsion" matrix="1 0 0 1 5.5477 0.491458" stroke="black" fill="black" pen="0.1">
+<path layer="Propulsion" matrix="1 0 0 1 0.120997 1.25396" stroke="black" fill="black" pen="0.1">
 235.82 684.065 m
 236.141 683.88 l
 235.35 682.514 l
@@ -1681,25 +1681,25 @@ motor\\</text>
 <text matrix="1 0 0 1 -2.04598 -4.08459" transformations="translations" pos="169.104 638.936" stroke="black" type="minipage" width="61.7916" height="10.194" depth="5.22" valign="top" size="tiny">Low Speed:\\
 - 360 deg rotation in 4 sec in all 3 axes</text>
 <text matrix="1 0 0 1 15.6269 -1.56158" transformations="translations" pos="111.9 640.622" stroke="black" type="label" width="62.593" height="3.46" depth="2.96" valign="baseline" size="tiny">\underline{Key Sizing Numbers:}\\</text>
-<path layer="Propulsion" matrix="1 0 0 1 1.15969 0.132673" stroke="blue" pen="0.2">
+<path layer="Propulsion" stroke="blue" pen="0.2">
+247.105 681.702 m
+247.12 685.551 l
+250.044 685.576 l
+250.097 681.702 l
+h
+</path>
+<path matrix="1 0 0 1 -71.4927 29.8649" stroke="blue" pen="0.2">
 229.999 680.074 m
 229.999 683.087 l
 232.991 683.087 l
 232.991 680.074 l
 h
 </path>
-<path matrix="1 0 0 1 -71.5193 45.2795" stroke="blue" pen="0.2">
-229.999 680.074 m
-229.999 683.087 l
-232.991 683.087 l
-232.991 680.074 l
-h
-</path>
-<text layer="Dimensions" transformations="translations" pos="199.241 683.476" stroke="blue" type="label" width="22.748" height="3.395" depth="0.96" valign="baseline" size="tiny">Battery</text>
+<text layer="Dimensions" matrix="1 0 0 1 14.9477 16.1093" transformations="translations" pos="199.241 683.476" stroke="blue" type="label" width="22.748" height="3.395" depth="0.96" valign="baseline" size="tiny">Battery</text>
 <path stroke="blue" pen="0.1">
-210.967 681.171 m
-222.121 674.775
-232.391 681.78 c
+240.282 700.397 m
+250.763 696.304
+248.563 683.423 c
 </path>
 </page>
 </ipe>
