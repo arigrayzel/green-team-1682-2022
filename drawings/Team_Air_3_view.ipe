@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20221101114348" modified="D:20221102222256"/>
+<info created="D:20221101114348" modified="D:20221103131549"/>
 <bitmap id="1" width="1000" height="150" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="6557" encoding="base64">
 eNrt3c9LW/n3x/H5x4bPQmZRupAupAvpxm7sZr58pG4sFIeCblIoyoASUajW4o9FypT0Y8hA
 MFQaGCqEhIotWEuHWDEISguhgt+jp56+vTeJiSbx3uT5IMwnvdp+9Obm3td957zP+/i48X75
@@ -443,8 +443,8 @@ h
 <layer name="Cockpit"/>
 <layer name="Header_Info"/>
 <layer name="Reference_Images"/>
-<view layers="Outer_Mold Structures Propulsion Controls Dimensions Cockpit Header_Info Reference_Images" active="Propulsion"/>
-<text layer="Header_Info" transformations="translations" pos="40 820" stroke="black" type="minipage" width="240" height="12.891" depth="7.92" valign="top">Set Grid size to 10pts\\
+<view layers="Outer_Mold Structures Propulsion Dimensions Cockpit Header_Info Reference_Images" active="Dimensions"/>
+<text layer="Header_Info" transformations="translations" pos="40 820" stroke="black" type="minipage" width="240" height="19.139" depth="14.18" valign="top">Set Grid size to 10pts (EVERY TIME YOU OPEN THIS FILE)\\
 10pts = 1 grid box = 1m</text>
 <path layer="Outer_Mold" matrix="1 0 0 1 -13.1451 0" stroke="black" pen="0.2">
 173.164 720 m
@@ -715,7 +715,7 @@ h
 306.686 679.997 l
 </path>
 <path stroke="black" pen="0.2">
-249.983 680.008 m
+250.138 683.525 m
 306.686 680.002 l
 </path>
 <path stroke="black" pen="0.2">
@@ -767,19 +767,19 @@ h
 161.33 660.021 l
 </path>
 <path stroke="black" pen="0.2">
-269.973 680.006 m
+269.905 682.294 m
 270.016 677.099 l
 </path>
 <path stroke="black" pen="0.2">
-279.95 680.005 m
+279.952 681.668 m
 280.011 677.616 l
 </path>
 <path stroke="black" pen="0.2">
-290.002 680.004 m
+289.994 681.042 m
 289.99 678.131 l
 </path>
 <path stroke="black" pen="0.2">
-299.969 680.003 m
+299.991 680.419 m
 299.989 678.648 l
 </path>
 <path stroke="black" pen="0.2">
@@ -867,23 +867,23 @@ h
 <path layer="Outer_Mold" stroke="black" pen="0.1">
 306.686 680.002 m
 299.989 678.648 l
-290.002 680.004 l
+289.994 681.042 l
 280.011 677.616 l
-269.973 680.006 l
+269.905 682.294 l
 259.998 676.582 l
-252.583 678.599 l
+256.339 678.98 l
 </path>
 <path stroke="black" pen="0.1">
 250.012 676.066 m
-259.19 679.294 l
+254.58 678.789 l
 </path>
 <path stroke="black" pen="0.1">
 306.64 678.991 m
-299.969 680.003 l
+299.991 680.419 l
 289.99 678.131 l
-279.95 680.005 l
+279.952 681.668 l
 270.016 677.099 l
-260.923 679.559 l
+259.871 682.919 l
 </path>
 <path matrix="1 0 0 1 -40 0" stroke="black" pen="0.2">
 319.994 715.544 m
@@ -1041,7 +1041,7 @@ h
 <use name="mark/cross(sx)" pos="160.019 714.012" size="tiny" stroke="black"/>
 <use name="mark/cross(sx)" pos="245.987 680.008" size="tiny" stroke="black"/>
 <use name="mark/cross(sx)" pos="248.286 680.008" size="tiny" stroke="black"/>
-<path layer="Cockpit" matrix="0.212149 0 0 0.18637 207.238 659.686" stroke="red" pen="0.2">
+<path layer="Cockpit" matrix="0.212149 0 0 0.18637 213.774 661.548" stroke="red" pen="0.2">
 132.756 104.028 m
 131.86 104.572 l
 160.124 99.6425 l
@@ -1092,7 +1092,7 @@ h
 132.436 108.742 m
 131.759 104.751 l
 </path>
-<path layer="Outer_Mold" matrix="1 0 0 1 0.962928 2.36692" stroke="black" pen="0.1">
+<path layer="Outer_Mold" matrix="1 0 0 1 0.578694 0.99725" stroke="black" pen="0.1">
 2.63379 0 0 2.63379 241.847 663.814 e
 </path>
 <path stroke="black" pen="0.1">
@@ -1106,99 +1106,91 @@ h
 306.64 678.991 m
 306.389 677.923 l
 </path>
-<path layer="Cockpit" matrix="1 0 0 1 31.4383 40.0064" stroke="red" pen="0.2">
+<path layer="Cockpit" matrix="1 0 0 1 31.4833 42.0758" stroke="red" pen="0.2">
 245.987 677.948 m
 245.987 687.192 l
 </path>
-<path matrix="1 0 0 1 36.6334 40.0073" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 36.6784 42.0767" stroke="red" pen="0.2">
 245.987 677.948 m
 245.987 687.192 l
 </path>
-<path matrix="1 0 0 1 -40 0" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -39.955 2.0694" stroke="red" pen="0.2">
 317.426 727.198 m
 322.62 727.199 l
 </path>
-<path matrix="1 0 0 1 -40 0" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -39.955 2.0694" stroke="red" pen="0.2">
 317.426 717.954 m
 322.62 717.955 l
 </path>
-<path matrix="1 0 0 1 -40 0" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -39.955 2.0694" stroke="red" pen="0.2">
 317.426 718.766 m
 322.633 718.771 l
+</path>
+<path matrix="1 0 0 1 -0.00072949 -7.60301" stroke="red" pen="0.2">
+157.198 720 m
+162.845 720 l
 </path>
 <path matrix="1 0 0 1 0.00246993 -1.26955" stroke="red" pen="0.2">
 157.198 720 m
 162.845 720 l
 </path>
-<path matrix="1 0 0 1 0.00566935 5.06391" stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.00353007 -11.2899" stroke="red" pen="0.2">
 157.198 720 m
 162.845 720 l
 </path>
-<path matrix="1 0 0 1 -0.00033065 -4.95646" stroke="red" pen="0.2">
-157.198 720 m
-162.845 720 l
-</path>
-<path stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.00319942 -6.33346" stroke="red" pen="0.2">
 157.198 715.044 m
 157.204 725.064 l
 </path>
-<path stroke="red" pen="0.2">
+<path matrix="1 0 0 1 -0.00319942 -6.33346" stroke="red" pen="0.2">
 162.851 725.064 m
 162.845 715.044 l
 </path>
 <path layer="Outer_Mold" stroke="black" pen="0.2">
-236.047 685.158 m
-224.239 682.744
-224.629 677.769
-230.157 676.486
+242.309 686.883 m
+233.04 686.178
+225.994 680.551
+234.198 677.419
 246.067 675.862 c
 </path>
-<path stroke="black" pen="0.2">
-245.062 687.089 m
-263.724 680.012 l
+<path stroke="black" pen="0.1">
+251.681 688.687 m
+269.905 682.294 l
 </path>
 <path stroke="black" pen="0.2">
-236.047 685.158 m
-241.072 683.355
-244.166 685.036 c
+242.309 686.883 m
+247.138 684.074
+250.765 686.715 c
 </path>
 <path stroke="black" pen="0.2">
-236.047 685.158 m
-236.265 688.33 l
-232.917 684.513 l
+242.307 686.987 m
+242.525 690.159 l
+237.398 686.272 l
 </path>
-<path matrix="1 0 0 1 -40 0" stroke="black" pen="0.2">
-319.994 725.253 m
-316.82 725.205
-316.44 721.762
-316.234 716.989
-317.379 715.909
-319.994 715.544 c
+<path stroke="black" pen="0.2">
+279.994 729.103 m
+276.401 728.498
+276.18 722.614
+276.445 718.238
+277.379 715.909
+279.994 715.544 c
 </path>
-<path matrix="-1 0 0 1 599.988 0" stroke="black" pen="0.2">
-319.994 725.253 m
-316.82 725.205
-316.44 721.762
-316.234 716.989
-317.379 715.909
-319.994 715.544 c
-</path>
-<path matrix="0.355683 0 0 0.985275 184.012 52.8985" stroke="black" pen="0.1">
+<path matrix="0.355683 0 0 0.985275 183.889 50.974" stroke="black" pen="0.1">
 2.63379 0 0 2.63379 241.847 663.814 e
 </path>
-<path matrix="-0.355683 0 0 0.985275 375.976 52.8985" stroke="black" pen="0.1">
+<path matrix="-0.355683 0 0 0.985275 376.042 50.5759" stroke="black" pen="0.1">
 2.63379 0 0 2.63379 241.847 663.814 e
 </path>
 <path stroke="black" pen="0.2">
 156.466 720 m
-156.466 730
-159.992 740.028
-163.591 729.98
+156.29 727.33
+159.963 732.522
+163.492 727.575
 163.571 720 c
 </path>
 <path stroke="black" pen="0.2">
-244.159 685.11 m
-245.121 687.016 l
+250.765 686.715 m
+251.714 688.555 l
 </path>
 <path layer="Dimensions" stroke="black" pen="0.1">
 106.855 749.953 m
@@ -1225,7 +1217,7 @@ h
 89.9624 654.998 m
 100.061 655.109 l
 </path>
-<text transformations="translations" pos="74.1469 685.835" stroke="black" type="label" width="14.252" height="3.21" depth="0" valign="baseline" size="tiny">6.5m</text>
+<text matrix="1 0 0 1 19.9142 -0.157043" transformations="translations" pos="74.1469 685.835" stroke="black" type="label" width="14.252" height="3.21" depth="0" valign="baseline" size="tiny">6.5m</text>
 <path stroke="black" pen="0.1">
 272.488 749.895 m
 272.488 745.464 l
@@ -1266,18 +1258,18 @@ h
 100.061 655.109 l
 </path>
 <text matrix="1 0 0 1 -4.71255 -1.74188" transformations="translations" pos="326.193 685.859" stroke="black" type="label" width="17.642" height="3.21" depth="0" valign="baseline" size="tiny">1.36m</text>
-<path matrix="1 0 0 1 -4.44968 0.169339" stroke="black" pen="0.1">
-169.98 714.093 m
-175.026 714.062 l
+<path matrix="1 0 0 1 0.105154 -3.56619" stroke="black" pen="0.1">
+246.257 677.44 m
+246.283 674.966 l
 </path>
-<path matrix="1 0 0 1 -4.44968 0.169339" stroke="black" pen="0.1">
-169.997 711.765 m
-175.057 711.786 l
+<path stroke="black" pen="0.1">
+248.57 673.867 m
+248.606 671.44 l
 </path>
-<text matrix="1 0 0 1 -1.50318 -0.797758" transformations="translations" pos="172.265 713.022" stroke="black" type="label" width="32.96" height="3.395" depth="0.96" valign="baseline" size="tiny">CG margin</text>
-<path matrix="1 0 0 1 -4.44968 0.169339" stroke="black" pen="0.1">
-172.503 714.077 m
-172.527 711.776 l
+<text matrix="1 0 0 1 91.4296 -52.5054" transformations="translations" pos="172.265 713.022" stroke="black" type="label" width="32.96" height="3.395" depth="0.96" valign="baseline" size="tiny">CG margin</text>
+<path matrix="1 0 0 1 0.105154 -3.56619" stroke="black" pen="0.1">
+248.545 676.536 m
+246.266 676.524 l
 </path>
 <path layer="Controls" matrix="1 0 0 1 11.3388 -2.7763" stroke="darkblue">
 0.184768 0 0 0.184768 146.885 728.21 e
@@ -1617,12 +1609,97 @@ h
 280.829 720.076 m
 280.544 722.232 l
 </path>
-<path layer="Propulsion" stroke="black" fill="black" pen="0.1">
+<path layer="Propulsion" matrix="1 0 0 1 5.5477 0.491458" stroke="black" fill="black" pen="0.1">
 235.82 684.065 m
 236.141 683.88 l
 235.35 682.514 l
 235.029 682.7 l
 h
+</path>
+<path layer="Dimensions" stroke="black" pen="0.2">
+259.891 680.615 m
+259.871 682.919 l
+</path>
+<path stroke="black" pen="0.2">
+250.057 681.601 m
+250.138 683.525 l
+</path>
+<path stroke="black" pen="0.1">
+250.138 683.525 m
+253.793 681.307 l
+</path>
+<path stroke="black" pen="0.1">
+259.871 682.919 m
+256.848 680.978 l
+</path>
+<path stroke="black" pen="0.2">
+279.994 729.09 m
+283.587 728.498
+283.808 722.614
+283.543 718.238
+282.609 715.909
+279.994 715.544 c
+</path>
+<text matrix="1 0 0 1 -108.757 -19.2204" transformations="translations" pos="198.866 654.155" stroke="black" type="minipage" width="140.939" height="19.147" depth="14.2" valign="top" size="tiny">High Speed:\\
+- Thrust/Weight = 1.1\\
+- G limit +6\\
+- Control w/ 1 working\\ 
+motor\\</text>
+<text matrix="1 0 0 1 18.9501 -7.61283" transformations="translations" pos="230.823 647.519" stroke="black" type="minipage" width="107.813" height="13.661" depth="8.7" valign="top" size="tiny">Placeholder Forms:\\
+- Landing Gear\\
+- Tail Truss\\
+- Cockpit Pod</text>
+<path stroke="black" pen="0.1">
+228.703 659.071 m
+314.417 677.759 l
+</path>
+<path stroke="black" pen="0.1">
+262.026 661.987 m
+253.016 660.465
+250.533 665.185
+247.023 668
+247.372 670.059 c
+</path>
+<path layer="Outer_Mold" stroke="black" pen="0.2">
+270.926 704.388 m
+270.887 706.288 l
+278.061 718.236 l
+</path>
+<path matrix="-1 0 0 1 559.988 0" stroke="black" pen="0.2">
+270.926 704.388 m
+270.887 706.288 l
+278.061 718.236 l
+</path>
+<path stroke="black" pen="0.2">
+241.867 678.742 m
+241.848 667.384 l
+</path>
+<path stroke="black" pen="0.2">
+244.331 678.387 m
+243.192 667.438 l
+</path>
+<text matrix="1 0 0 1 -2.04598 -4.08459" transformations="translations" pos="169.104 638.936" stroke="black" type="minipage" width="61.7916" height="10.194" depth="5.22" valign="top" size="tiny">Low Speed:\\
+- 360 deg rotation in 4 sec in all 3 axes</text>
+<text matrix="1 0 0 1 15.6269 -1.56158" transformations="translations" pos="111.9 640.622" stroke="black" type="label" width="62.593" height="3.46" depth="2.96" valign="baseline" size="tiny">\underline{Key Sizing Numbers:}\\</text>
+<path layer="Propulsion" matrix="1 0 0 1 1.15969 0.132673" stroke="blue" pen="0.2">
+229.999 680.074 m
+229.999 683.087 l
+232.991 683.087 l
+232.991 680.074 l
+h
+</path>
+<path matrix="1 0 0 1 -71.5193 45.2795" stroke="blue" pen="0.2">
+229.999 680.074 m
+229.999 683.087 l
+232.991 683.087 l
+232.991 680.074 l
+h
+</path>
+<text layer="Dimensions" transformations="translations" pos="199.241 683.476" stroke="blue" type="label" width="22.748" height="3.395" depth="0.96" valign="baseline" size="tiny">Battery</text>
+<path stroke="blue" pen="0.1">
+210.967 681.171 m
+222.121 674.775
+232.391 681.78 c
 </path>
 </page>
 </ipe>
