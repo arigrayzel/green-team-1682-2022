@@ -443,8 +443,8 @@ h
 <layer name="Cockpit"/>
 <layer name="Header_Info"/>
 <layer name="Reference_Images"/>
-<view layers="Outer_Mold Structures Propulsion Dimensions Cockpit Header_Info" active="Dimensions"/>
-<text layer="Header_Info" transformations="translations" pos="40 820" stroke="black" type="minipage" width="240" height="12.891" depth="7.92" valign="top">Set Grid size to 10pts\\
+<view layers="Outer_Mold Structures Propulsion Controls Dimensions Cockpit Header_Info Reference_Images" active="Dimensions"/>
+<text layer="Header_Info" transformations="translations" pos="40 820" stroke="black" type="minipage" width="240" height="19.139" depth="14.18" valign="top">Set Grid size to 10pts (EVERY TIME YOU OPEN THIS FILE)\\
 10pts = 1 grid box = 1m</text>
 <path layer="Outer_Mold" matrix="1 0 0 1 -13.1451 0" stroke="black" pen="0.2">
 173.164 720 m
