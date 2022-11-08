@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20221101114348" modified="D:20221103153013"/>
+<info created="D:20221101114348" modified="D:20221108130403"/>
 <bitmap id="1" width="1000" height="150" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="6557" encoding="base64">
 eNrt3c9LW/n3x/H5x4bPQmZRupAupAvpxm7sZr58pG4sFIeCblIoyoASUajW4o9FypT0Y8hA
 MFQaGCqEhIotWEuHWDEISguhgt+jp56+vTeJiSbx3uT5IMwnvdp+9Obm3td957zP+/i48X75
@@ -851,9 +851,9 @@ h
 179.97 722.895 l
 180.377 720.993 l
 </path>
-<path matrix="1 0 0 1 -32.9969 -62.846" stroke="black" pen="0.2">
-179.992 721.542 m
-205.994 721.542 l
+<path matrix="1 0 0 1 5.51051 0" stroke="black" pen="0.2">
+146.995 658.696 m
+161.989 658.696 l
 </path>
 <path layer="Cockpit" matrix="0.113318 0 0 8.98725 141.886 -5750.82" transformations="rigid" stroke="black" pen="0.2">
 179.244 720 m
@@ -905,10 +905,10 @@ h
 304.402 693.246 l
 304.402 693.246 l
 </path>
-<use layer="Dimensions" name="mark/cross(sx)" pos="160.019 711.718" size="tiny" stroke="black"/>
-<use matrix="1 0 0 1 -0.00167886 -1.20075" name="mark/cross(sx)" pos="160.019 714.012" size="tiny" stroke="black"/>
-<use matrix="1 0 0 1 7.77462 1.20124" name="mark/cross(sx)" pos="245.987 680.008" size="tiny" stroke="black"/>
-<use name="mark/cross(sx)" pos="248.286 680.008" size="tiny" stroke="black"/>
+<use layer="Dimensions" matrix="1 0 0 1 0 1.28586" name="mark/cross(sx)" pos="160.019 711.718" size="tiny" stroke="black"/>
+<use matrix="1 0 0 1 -0.00167886 1.24716" name="mark/cross(sx)" pos="160.019 714.012" size="tiny" stroke="black"/>
+<use matrix="1 0 0 1 1.03255 -0.00899158" name="mark/cross(sx)" pos="245.987 680.008" size="tiny" stroke="black"/>
+<use matrix="1 0 0 1 -3.56026 0" name="mark/cross(sx)" pos="248.286 680.008" size="tiny" stroke="black"/>
 <path layer="Cockpit" matrix="0.212149 0 0 0.18637 218.228 662.48" stroke="red" pen="0.2">
 132.756 104.028 m
 131.86 104.572 l
@@ -960,7 +960,7 @@ h
 132.436 108.742 m
 131.759 104.751 l
 </path>
-<path layer="Outer_Mold" matrix="1 0 0 1 0.862435 0.209099" stroke="black" pen="0.1">
+<path layer="Outer_Mold" matrix="1 0 0 1 1.368 2.794" stroke="black" pen="0.1">
 2.63379 0 0 2.63379 241.847 663.814 e
 </path>
 <path stroke="black" pen="0.1">
@@ -1090,11 +1090,11 @@ h
 100.061 655.109 l
 </path>
 <text matrix="1 0 0 1 -4.71255 -1.74188" transformations="translations" pos="326.193 685.859" stroke="black" type="label" width="17.642" height="3.21" depth="0" valign="baseline" size="tiny">1.36m</text>
-<path matrix="1 0 0 1 -4.39514 -1.27918" stroke="black" pen="0.1">
+<path matrix="1 0 0 1 -4.71489 1.16417" stroke="black" pen="0.1">
 169.98 714.093 m
 175.026 714.062 l
 </path>
-<path matrix="1 0 0 1 -4.44699 -0.108982" stroke="black" pen="0.1">
+<path matrix="1 0 0 1 -4.78098 1.23565" stroke="black" pen="0.1">
 169.997 711.765 m
 175.057 711.786 l
 </path>
@@ -1115,13 +1115,13 @@ h
 279.994 715.544 c
 </path>
 <path stroke="black" pen="0.2">
-248.286 680.008 m
+248.246 679.805 m
 243.215 666.608
 243.325 666.584 c
 </path>
 <path stroke="black" pen="0.2">
-243.317 661.46 m
-308.17 676.59 l
+238.824 662.987 m
+312.304 677.342 l
 </path>
 <path stroke="black" pen="0.2">
 246.725 690.995 m
@@ -1164,9 +1164,9 @@ h
 243.538 688.651
 242.683 689.676 c
 </path>
-<path layer="Dimensions" stroke="black" pen="0.2">
-168.108 712.798 m
-168.08 711.667 l
+<path layer="Dimensions" matrix="1 0 0 1 -0.0032523 -0.0000135" stroke="black" pen="0.2">
+167.792 715.241 m
+167.763 713.044 l
 </path>
 <path layer="Structures" stroke="black" pen="0.2">
 279.994 715.544 m
