@@ -57,12 +57,12 @@ angular_velocity = opti.derivative_of(angle, with_respect_to=time, derivative_in
 alpha = opti.derivative_of(angular_velocity, with_respect_to=time, derivative_init_guess=1)
 
 
-moment_guess = 4700g
+moment_guess = 2900
 
 
 moment = opti.variable(init_guess=np.linspace(moment_guess, -moment_guess, n_timesteps),n_vars = n_timesteps, lower_bound=-moment_guess, upper_bound=moment_guess)
 
-opti.constrain_derivative(variable=angular_velocity, with_respect_to=time, derivative=(moment-Cd*A_tail*0.5*rho*(angular_velocity*l_rotor)**2)*extra_drag_coeff/I_zz)
+opti.constrain_derivative(variable=angular_velocity, with_respect_to=time, derivative=(moment-Cd*A_tail*0.5*rho*(angular_velocity*l_rotor)**2)*extra_drag_coeff/I_xx)
 
 opti.subject_to([
     angle[0] == 0,
@@ -77,19 +77,20 @@ sol = opti.solve()
 print(f"Max angular acceleration: {max(sol.value(alpha)):.2f}")
 print(f"Max negative angular acceleration: {min(sol.value(alpha)):.2f}")
 print("Final time:", sol.value(time_final))
-
-fig, ax = plt.subplots(3,1)
+print("max angular velocity:", max(sol.value(angular_velocity)))
+print("average angular velocity:", sum(sol.value(angular_velocity))/n_timesteps)
+fig, ax = plt.subplots(3, 1)
 ax[0].plot(sol.value(time), sol.value(angle))
 ax[0].set_xlabel(r"Time(s)")
 ax[0].set_ylabel(r"Angle(rad)")
 
 ax[1].plot(sol.value(time), sol.value(angular_velocity))
 ax[1].set_xlabel(r"Time(s)")
-ax[1].set_ylabel(r"Anglular velocity(rad/s)")
+ax[1].set_ylabel(r"Angular velocity(rad/s)")
 
-ax[2].plot(sol.value(time), sol.value(moment/l_rotor))
+ax[2].plot(sol.value(time), sol.value(moment))
 ax[2].set_xlabel(r"Time(s)")
-ax[2].set_ylabel(r"Thrust(N)")
+ax[2].set_ylabel(r"Moment(Nm)")
 
 
 ##fig, ax = plt.subplots(1,3,2, figsize=(6.4, 4.9), dpi=200)

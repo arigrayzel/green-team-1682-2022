@@ -30,9 +30,6 @@ NACA
 
 #Cname   Cgain  Xhinge  HingeVec     SgnDup
 CONTROL
-flap     1.0   0.75    0.0 0.0 0.0   1.0
-
-CONTROL
 aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
 #-------------------------------------------------------------
 SECTION
@@ -44,9 +41,6 @@ NACA
 
 #Cname   Cgain  Xhinge  HingeVec     SgnDup
 CONTROL
-flap     1.0   0.75    0.0 0.0 0.0   1.0
-
-CONTROL
 aileron  -1.0   0.75    0.0 0.0 0.0  -1.0
 #
 #--------------------------------------------------
@@ -57,18 +51,18 @@ STAB
 YDUPLICATE 
 0.0
 TRANSLATE 
-6.1  0.0  1.36
+5.5  0.0  1.22
 SECTION
 !Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
--0.1    0.     0.0     0.82     0.    7          -1.25
+-0.093    0.     0.0     0.93     0.    7          -1.25
 CONTROL
-elevator  1.0  0.0  0. 0. 0.  1
+elevator  1.0  0.25  0. 0. 0.  1
 
 SECTION
 !Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
--0.075  1.79   0.0     0.61     0.    0          0
+0    1.49   0.0     0.56     0.    0          0
 CONTROL
-elevator  1.0  0.0  0. 0. 0.  1
+elevator  1.0  0.25  0. 0. 0.  1
 
 #--------------------------------------------------
 SURFACE
@@ -76,15 +70,15 @@ FIN
 !Nchordwise  Cspace   Nspanewise  Sspace
 1            1.0      10          1.0
 TRANSLATE
-6   0.0  0.0
+5.5   0.0  0.0
 SECTION
 !Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
--0.1    0.     0.0     1.09     0.    7          -1.25
+-0.23    0.     0.0     0.93     0.    7          -1.25
 CONTROL
 rudder  1.0  0.80  0. 0. 0.  1
 
 SECTION
 !Xle    Yle    Zle     Chord   Ainc  Nspanwise  Sspace
--0.075  0.     1.36     0.27     0.    0          0
+0    0.     1.22     0.7     0.    0          0
 CONTROL
 rudder  1.0  0.80  0. 0. 0.  1
